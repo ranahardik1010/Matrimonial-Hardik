@@ -70,7 +70,7 @@
 			<div class="row">
 				<div class="col-md-6 col-md-push-6 animate-box">
 					<h3>Get In Touch</h3>
-					<form action="contact_inq.php" method="post">
+					<form id="contactinqform" method="post">
 						<div class="row form-group">
 							<div class="col-md-6">
 								<label for="fname">First Name</label>
@@ -103,7 +103,7 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<input type="submit" value="Send Message" class="btn btn-primary">
+							<input type="submit" id="contactinq" value="Send Message" class="btn btn-primary">
 						</div>
 
 					</form>		
