@@ -318,7 +318,7 @@
 
 	<?php
 
-		require "searchprofilepro.php";
+		//require "searchprofilepro.php";
 		require "conn.php";
 
 		$rid=$_GET['rid'];
@@ -357,6 +357,7 @@
 
 						if($a >= $age[0] && $a <= $age[1])
 						{
+							require "searchprofilepro.php";
 							profile($row1,$rid,$eid,$aid);
 						}	
 					}
@@ -382,6 +383,7 @@
 
 						if($a >= $age[0] && $a <= $age[1])
 						{
+							require "searchprofilepro.php";
 							profile($row1,$rid,$eid,$aid);
 						}
 					}
@@ -403,6 +405,7 @@
 
 						if($a >= $age[0] && $a <= $age[1])
 						{
+							require "searchprofilepro.php";
 							profile($row1,$rid,$eid,$aid);
 						}
 					}
@@ -424,6 +427,7 @@
 
 						if($a >= $age[0] && $a <= $age[1])
 						{
+							require "searchprofilepro.php";
 							profile($row1,$rid,$eid,$aid);
 						}
 					}
@@ -435,11 +439,12 @@
 			{
 				while($row=mysqli_fetch_assoc($rs))
 				{
+					require "searchprofilepro.php";
 					profile($row,$rid,$eid,$aid);
 				}
 			}
 		}
-	?>
+	?> 
 
 	<?php
 		require "footer.php";
