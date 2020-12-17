@@ -20,13 +20,10 @@
 			header("location:index.php");
 			exit();
 		}
-		else
-		{
-			echo "Invalid Password";
-		}
 	}
 	else
 	{
-		echo "Inavalid Username";
+		header("location:login.php");
+		exit();
 	}
 ?>
